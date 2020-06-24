@@ -5,6 +5,7 @@ return '<h1>hello world insam</h1>';
 
 function insam_register_post_type() {
 	register_post_type( 'book', [
+		'has_archive' => true, // 아카이브 링크를 켜기
 		'labels' => [
 			'name'                  => '책',
 			'singular_name'         => '책',
