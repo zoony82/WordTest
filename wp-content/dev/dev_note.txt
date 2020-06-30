@@ -24,6 +24,13 @@ wp_footer()
 
 액션의 개념 익히고 활용하기
 wp_head 내용을 채우기
+
+
+* 2020.06.30
+스타일 불러오고 테마 기본 셋팅하기
+- 두가지 액션 태그
+  + after_setup_theme
+  + wp_enque_scripts
 wp_enqueue_style('handle-name', get_stylesheet_url()); 기본 스타일시트 인클루드
 add_action(wp_queue_scripts, function_name) 기본 스타일시트 인클루드 함수를 등록
 add_action(after_setup_theme, function_name) 기본 테마 설정 함수를 등록
