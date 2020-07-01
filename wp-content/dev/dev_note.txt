@@ -35,3 +35,16 @@ wp_enqueue_style('handle-name', get_stylesheet_url()); 기본 스타일시트 �
 add_action(wp_queue_scripts, function_name) 기본 스타일시트 인클루드 함수를 등록
 add_action(after_setup_theme, function_name) 기본 테마 설정 함수를 등록
 
+* 2020.07.01
+- post(블로그 글 등), book(custom post type) : single.php 에서 관리
+- page(웹사이트 정책, 소개페이지 등) : page.php 에서 관리
+- 둘다 : singular.php 에서 관리
+
+- single.php 에서 사용하는 함수들
+-- the_title() 제목을 출력
+-- the_permalink() url을 출력
+-- the_content() 내용을 출력
+
+-- get_the_title() 제목을 가져옴
+
+-- 그런데 get 보다는 the로 시작되는것들을 사용하는것이 좋다.
