@@ -1,3 +1,5 @@
 <?php
-include 'functions_post_type.php';
-include 'functions_taxnomy.php';
+include 'functions-post-type.php';
+include 'functions-setup.php';
+include 'functions-taxonomy.php';
+include 'functions-meta-box.php';

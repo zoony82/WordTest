@@ -82,4 +82,15 @@
 - 상세 카테고리 추가
 
         https://codex.wordpress.org/Function_Reference/register_taxonomy
-        
+
+**2020.07.04**
+- 책 정보 입력 항목 만들기 - 3
+
+        metabox: post 편집 화면에서 한 영역을 뜻하는 용어. html의 필드셋 개념으로 생각하면 된다. 필드를 추가할 때 사용
+        단순 input: 앞부제, 뒷부제, 가격, 출간일, 페이지수
+        에디터: 목차
+        이미지: 표지 이미지
+        함수: add_meta_box()
+        인자값: html id, 사람용 제목, 출력용 함수, [post type]
+        액션: add_meta_boxes
+        add_meta_boxes_{post-type}
