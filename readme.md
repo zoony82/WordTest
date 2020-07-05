@@ -94,3 +94,9 @@
         인자값: html id, 사람용 제목, 출력용 함수, [post type]
         액션: add_meta_boxes
         add_meta_boxes_{post-type}
+
+**2020.07.05**
+- 책 정보 입력 항목 만들기 - 목차용 에디터 붙이기
+
+            wp_editor( $content, $editor_id, $settings = array() );
+
