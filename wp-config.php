@@ -79,6 +79,9 @@ $table_prefix = 'wp_';
  */
 define( 'WP_DEBUG', false );
 
+// file system에 직접 접근해서, 업데이트를 받아 온다(wp-admin 에서 업데이트 누르면 자동으로 된다)
+define('FS_METHOD', 'direct');
+
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */

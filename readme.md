@@ -100,3 +100,24 @@
 
             wp_editor( $content, $editor_id, $settings = array() );
 
+**2020.07.06**
+- 업그레이드 편하게 하기
+
+        사전 작업
+        데이터베이스 백업
+        mysql -uroot -p
+        mysqldump -uroot -p bookstore bookstore.sql
+        
+        방법 1. 설정값 변경(wp-admin 에서 업데이트 하는것이 아닌 방법, 추천)
+        wp-config.php
+        
+        define('FS_METHOD', 'direct');
+        우분투: www-data(아파치 사용자) 그룹에 모든 파일을 소유시키고, 그룹에 쓰기 권한을 준다.
+        
+        방법 2. wp-cli 사용 (맥, 리눅스)
+        wp-cli
+        
+        wp core update
+        wp plugin update --all
+        wp theme update --all
+        wp language core update
